@@ -1,0 +1,30 @@
+
+{% extends "bases/base.html" %} 
+
+
+{% load static %} 
+
+{% block 'head' %} 
+<link href="{% static 'usuarios/css/css.css' %}" rel="stylesheet">
+{% endblock 'head' %} 
+
+{% block 'conteudo' %}
+{% include "navbar.html"%}
+<br>
+<br>
+<div class="container d-flex align-items-center justify-content-center">  
+    <div class="row">
+        <div  style="text-align: center">
+            <img src="{% static 'geral/img/logo.png' %}" alt="">
+        </div>
+        <div style="text-align: center">
+            <h2 style="text-align: center">BragaLab</h2>
+        </div>
+        <br>
+        <br>
+        <div style="text-align: center">
+            <h3 style="text-align: center">Exames laboratorias de forma acessível em Recife</h3>
+        </div>
+    </div>
+</div>
+{% endblock %}

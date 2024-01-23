@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Exames</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'solicitar_exames' %}">Solicitar Exames</a></li>
+                  <li><a class="dropdown-item" href="{% url 'gerenciar_pedidos'%}">Gerenciar Pedidos</a></li>
+                  <li><a class="dropdown-item" href="{% url 'gerenciar_exames'%}">Gerenciar Exames</a></li>
+                  <li><a class="dropdown-item" href="{% url 'gerar_acesso_medico'%}">Gerar Acesso Médico</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">Sair</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  </body>
